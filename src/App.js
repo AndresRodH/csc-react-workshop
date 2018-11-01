@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Button from "./Button"
 import fetchApi from "./fetchApi"
 import "./App.css"
 
@@ -28,9 +29,7 @@ class App extends Component {
       <div className="App">
         <h1>Chuck Norris Random Joke App</h1>
         <h3>{data && data.value}</h3>
-        <button disabled={loading} onClick={() => this.fetchRandomJoke()}>
-          {loading ? "Loading..." : "Fetch Another One!"}
-        </button>
+        <Button loading={loading} handleClick={() => this.fetchRandomJoke()} />
       </div>
     )
   }

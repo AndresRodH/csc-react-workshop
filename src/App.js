@@ -1,29 +1,29 @@
-import React, { Component } from "react";
-import fetchApi from "./fetchApi";
-import "./App.css";
+import React, { Component } from "react"
+import fetchApi from "./fetchApi"
+import "./App.css"
 
 class App extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       loading: false,
       data: null
-    };
+    }
   }
 
   fetchRandomJoke() {
-    this.setState({ loading: true });
+    this.setState({ loading: true })
     fetchApi().then(data => {
-      this.setState({ data, loading: false });
-    });
+      this.setState({ data, loading: false })
+    })
   }
 
   componentDidMount() {
-    this.fetchRandomJoke();
+    this.fetchRandomJoke()
   }
 
   render() {
-    const { data, loading } = this.state;
+    const { data, loading } = this.state
     return (
       <div className="App">
         <h1>Chuck Norris Random Joke App</h1>
@@ -32,8 +32,8 @@ class App extends Component {
           {loading ? "Loading..." : "Fetch Another One!"}
         </button>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

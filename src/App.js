@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import Button from "./Button"
 import fetchApi from "./fetchApi"
-import "./App.css"
 
 class App extends Component {
   constructor() {

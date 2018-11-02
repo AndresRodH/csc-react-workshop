@@ -1,3 +1,12 @@
+# CSC Workshop
+
+This sample repo touches some of the most basic concepts when developing React. These being:
+
+- Functional Components
+- Class Components
+  - State initialization
+  - Lifecycle Methods and fetching data asynchronously
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

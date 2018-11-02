@@ -8,6 +8,7 @@ This sample repo touches some of the most basic concepts when developing React. 
   - Lifecycle Methods and fetching data asynchronously
 - Styling Components
 - Modularizing Components
+- Conditional Rendering
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
